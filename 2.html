@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.car {
+			width: 100px;
+			height: 150px;
+			position: absolute;
+			top: 600px;
+			transition: 0.5s
+		}
+		.finish{
+			width: 1280px;
+			height: 70px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+	</style>
+</head>
+<body>
+	<img src="finish.png" class="finish">
+
+	<img src="car1.png" class="car">
+	<img src="car2.png" class="car" style="left: 120px;">
+	<img src="car3.png" class="car" style="left: 240px;">
+	<img src="car4.png" class="car" style="left: 360px;">
+	<img src="car5.png" class="car" style="left: 480px;">
+
+	<script type="text/javascript">
+		let cars = document.querySelectorAll('.car')
+		let tops = [600, 600, 600, 600, 600]
+		cars[0].onclick = function(){
+			tops[0] -= 150
+			cars[0].style.top = tops[0]+'px'
+			if (tops[0] == 0){
+				alert('First wins')
+			}
+		}
+
+		cars[1].onclick = function(){
+			tops[1] -= 150
+			cars[1].style.top = tops[1]+'px'
+			if (tops[1] == 0){
+				alert('Second wins')
+			}
+		}
+
+		cars[2].onclick = function(){
+			tops[2] -= 150
+			cars[2].style.top = tops[2]+'px'
+			if (tops[2] == 0){
+				alert('First wins')
+			}
+		}
+
+		cars[3].onclick = function(){
+			tops[3] -= 150
+			cars[3].style.top = tops[3]+'px'
+			if (tops[3] == 0){
+				alert('Third wins')
+			}
+		}
+
+		cars[4].onclick = function(){
+			tops[4] -= 150
+			cars[4].style.top = tops[4]+'px'
+			if (tops[4] == 0){
+				alert('Fifth wins')
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+	<style>
+		.fish{
+			position: absolute;
+			transition: 1.5s;
+		}
+		.hook{
+			position: absolute;
+			top:0;
+			left: 1500px;
+		}
+	</style>
+</head>
+<body>
+	<img src="fish.png" alt="" class="fish" style="top:0; left:200px;">
+	<img src="fish.png" alt="" class="fish" style="top:100px; left:100px;">
+	<img src="fish.png" alt="" class="fish" style="top:50px; left:400px;">
+	<img src="fish.png" alt="" class="fish" style="top:150px; left:100px;">
+	<img src="fish.png" alt="" class="fish" style="top:200px; left:300px;">
+	<img src="fish.png" alt="" class="fish" style="top:300px; left:60px;">
+	<img src="fish.png" alt="" class="fish" style="top:350; left:140px;">
+	<img src="kruchok.png" alt="" class="hook">
+	<script>
+		let fishes = document.querySelectorAll('.fish')
+		let hook = document.querySelector('.hook')
+		hook.onclick = function(){
+			fishes[0].style.left = 1500+'px'
+			fishes[0].style.top = 0+'px'
+
+			fishes[1].style.left = 1500+'px'
+			fishes[1].style.top = 0+'px'
+
+			fishes[2].style.left = 1500+'px'
+			fishes[2].style.top = 0+'px'
+
+			fishes[3].style.left = 1500+'px'
+			fishes[3].style.top = 0+'px'
+
+			fishes[4].style.left = 1500+'px'
+			fishes[4].style.top = 0+'px'
+
+			fishes[5].style.left = 1500+'px'
+			fishes[5].style.top = 0+'px'
+
+			fishes[6].style.left = 1500+'px'
+			fishes[6].style.top = 0+'px'
+		}
+	</script>
+</body>
+</html>

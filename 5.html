@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		.letter7 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Небольшой видеоролик, состоящий из кратких и обычно наиболее зрелищных фрагментов фильма, используемый для анонсирования или рекламы этого фильма.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Т</h1>
+		</div>
+		<div class="letter2">
+			<h1>Р</h1>
+		</div>
+		<div class="letter3">
+			<h1>Е</h1>
+		</div>
+		<div class="letter4">
+			<h1>Й</h1>
+		</div>
+		<div class="letter5">
+			<h1>Л</h1>
+		</div>
+		<div class="letter6">
+			<h1>Е</h1>
+		</div>
+		<div class="letter7">
+			<h1>Р</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="A">A</span>
+	<span class="error">Б</span>
+	<span class="error">В</span>
+	<span class="G">Г</span>
+	<span>Д</span>		
+	<span class="E">Е</span>	
+	<span>Ё</span>
+	<span>Ж</span>
+	<span>З</span>
+	<span class="I">И</span>
+	<span class="II">Й</span>
+	<span class="K" style="color: red">К</span>
+	<span class="L">Л</span>
+	<span>М</span>
+	<span>Н</span>
+	<span>О</span>
+	<span>П</span>
+	<span class="R">Р</span>
+	<span>С</span>
+	<span class="T">Т</span>
+	<span>У</span>
+	<span>Ф</span>
+	<span>Х</span>
+	<span>Ц</span>
+	<span>Ч</span>
+	<span>Ш</span>
+	<span>Щ</span>
+	<span>Ъ</span>
+	<span>Ы</span>
+	<span>Ь</span>
+	<span>Э</span>
+	<span>Ю</span>
+	<span>Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. Да, надо каждой букве придумывать новый класс.
+		3. Придумай свой вопрос и ответ. 
+		 */
+		 let r1 = document.querySelector('.T')
+		 let letter1 = document.querySelector('.letter1')
+		 r1.onclick = function(){
+		 	letter1.style.background = 'none'
+		 }
+
+		 let r2r7 = document.querySelector('.R')
+		 let letter2 = document.querySelector('.letter2')
+		 let letter7 = document.querySelector('.letter7')
+		 r2r7.onclick = function(){
+		 	letter2.style.background = 'none'
+		 	letter7.style.background = 'none'
+		 }
+
+		 let r3r6 = document.querySelector('.E')
+		 let letter3 = document.querySelector('.letter3')
+		 let letter6 = document.querySelector('.letter6')
+		 r3r6.onclick = function(){
+		 	letter3.style.background = 'none'
+		 	letter6.style.background = 'none'
+		 }
+
+		 let r4 = document.querySelector('.II')
+		 let letter4 = document.querySelector('.letter4')
+		 r4.onclick = function(){
+		 	letter4.style.background = 'none'
+		 }
+		 let r5 = document.querySelector('.L')
+		 let letter5 = document.querySelector('.letter5')
+		 r5.onclick = function(){
+		 	letter5.style.background = 'none'
+		 }		 
+
+		 let wr = document.querySelectorAll('.error')
+		 wr[0].onclick = function(){
+		 	alert('Неверно!')
+		 }
+		 wr[1].onclick = function(){
+		 	alert('Неверно!')
+		 }
+	</script>
+</body>
+</html>
